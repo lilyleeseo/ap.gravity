@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>APS × Gravity — 오픈이노베이션 펀드 제안</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
 <style>
 :root {
@@ -33,7 +31,7 @@
   --warn:      #D97706;
   --danger:    #DC2626;
 
-  --font-head: 'Syne', sans-serif;
+  --font-head: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', sans-serif;
   --font-body: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', sans-serif;
   --font-mono: 'Pretendard', -apple-system, 'Apple SD Gothic Neo', sans-serif;
 
@@ -166,21 +164,6 @@ nav {
   max-width: 620px;
   line-height: 1.6;
 }
-.hero-chips {
-  display: flex; flex-wrap: wrap; gap: 10px;
-}
-.hero-chip {
-  display: flex; flex-direction: column;
-  background: rgba(255,255,255,0.85);
-  border: 1px solid var(--border);
-  border-radius: var(--r-md);
-  padding: 12px 20px;
-  min-width: 140px;
-  backdrop-filter: blur(8px);
-}
-.hero-chip:hover { border-color: var(--border-h); }
-.chip-l { font-family: var(--font-mono); font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--g-green); margin-bottom: 4px; }
-.chip-v { font-family: var(--font-head); font-size: 17px; font-weight: 700; color: var(--text); }
 
 /* ── SCROLL INDICATOR ── */
 .scroll-hint {
@@ -353,40 +336,6 @@ nav {
 .fund-sub { font-size: 16px; color: var(--muted); margin-top: 6px; }
 
 /* ── OPTION CARDS ──────────────────── */
-.option-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--r-lg);
-  padding: 24px 22px;
-  position: relative;
-}
-.option-card.featured {
-  border-color: rgba(0,168,118,0.3);
-  background: rgba(0,168,118,0.04);
-}
-.option-badge {
-  position: absolute; top: -10px; left: 20px;
-  font-family: var(--font-mono); font-size: 9px; font-weight: 600;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  background: var(--g-green); color: #fff;
-  padding: 3px 10px; border-radius: 99px;
-}
-.option-num {
-  font-family: var(--font-mono); font-size: 12px; font-weight: 600;
-  color: var(--g-green); margin-bottom: 10px;
-}
-.option-title {
-  font-family: var(--font-head); font-size: 15px; font-weight: 700;
-  color: var(--text); margin-bottom: 12px;
-}
-.option-bar {
-  display: flex; align-items: center; gap: 6px;
-  font-size: 12px; margin-bottom: 6px; color: var(--muted);
-}
-.option-bar-fill {
-  height: 5px; border-radius: 99px;
-  transition: width 1.2s ease;
-}
 
 /* ── THEMES ────────────────────────── */
 .theme-card {
@@ -411,27 +360,6 @@ nav {
   color: var(--text); margin-bottom: 10px; line-height: 1.25;
 }
 .theme-desc { font-size: 13px; color: var(--muted); line-height: 1.65; }
-.theme-bottom {
-  border-top: 1px solid var(--border);
-  padding: 16px 22px;
-  display: flex; flex-direction: column; gap: 8px;
-}
-.theme-row {
-  display: flex; gap: 8px; align-items: flex-start;
-  font-size: 12px; color: var(--muted);
-}
-.theme-row-label {
-  font-family: var(--font-mono); font-size: 9px; font-weight: 600;
-  letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--a-blue); min-width: 44px; padding-top: 2px;
-}
-.theme-poc {
-  background: rgba(0,168,118,0.07);
-  border-top: 1px solid var(--border);
-  padding: 12px 22px;
-  font-size: 12px; color: var(--g-green);
-  font-family: var(--font-mono);
-}
 .priority-badge {
   display: inline-flex; align-items: center; gap: 5px;
   font-family: var(--font-mono); font-size: 9px; font-weight: 600;
@@ -493,29 +421,6 @@ nav {
 .roi-table tbody tr:hover td { background: rgba(255,255,255,0.02); }
 
 /* ── PARTNER SECTION ───────────────── */
-.partner-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--r-xl);
-  padding: 36px 32px;
-  box-shadow: 0 1px 4px rgba(10,30,80,0.05);
-}
-.partner-logo {
-  font-family: var(--font-head);
-  font-size: 22px; font-weight: 800;
-  letter-spacing: -0.02em; margin-bottom: 16px;
-  color: var(--text);
-}
-.partner-desc { font-size: 14px; color: var(--muted); line-height: 1.75; margin-bottom: 24px; }
-.cred-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.cred-item {
-  display: flex; gap: 10px; align-items: flex-start;
-  font-size: 13px; color: var(--text);
-}
-.cred-item::before {
-  content: '→'; font-family: var(--font-mono);
-  color: var(--g-green); flex-shrink: 0; margin-top: 1px; font-weight: 700;
-}
 
 /* ── FOOTER ─────────────────────────── */
 footer {
@@ -584,16 +489,6 @@ footer {
 .info-val.accent { color: var(--g-green); }
 
 /* ── POLICY CARD ───────────────────── */
-.policy-card {
-  background: linear-gradient(135deg, rgba(26,95,212,0.05), rgba(0,168,118,0.04));
-  border: 1px solid rgba(26,95,212,0.15);
-  border-radius: var(--r-lg);
-  padding: 24px 22px;
-}
-.policy-icon { font-size: 24px; margin-bottom: 12px; }
-.policy-title { font-family: var(--font-head); font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
-.policy-desc { font-size: 13px; color: var(--muted); line-height: 1.65; }
-.policy-highlight { margin-top: 12px; font-size: 13px; font-weight: 700; color: var(--a-blue); }
 
 /* ── SECTION SEPARATOR ─────────────── */
 .section-sep {
@@ -633,11 +528,6 @@ footer {
   color: var(--text); margin-bottom: 8px;
 }
 .flow-step-desc { font-size: 13px; color: var(--muted); line-height: 1.65; }
-.flow-step-detail {
-  margin-top: 14px; padding-top: 14px;
-  border-top: 1px solid var(--border);
-  font-size: 12px; color: var(--muted); line-height: 1.6;
-}
 
 /* ── RESPONSIVE ────────────────────── */
 @media (max-width: 800px) {
@@ -686,28 +576,6 @@ footer {
       그래비티벤처스가 APS 그룹의 핵심 기술과 딥테크 스타트업을 연결합니다.<br>
       50억 원 펀드 + OI 프로그램으로 기업가치 재평가를 실현합니다.
     </p>
-    <div class="hero-chips">
-      <div class="hero-chip">
-        <div class="chip-l">제안 주체</div>
-        <div class="chip-v">그래비티벤처스</div>
-      </div>
-      <div class="hero-chip">
-        <div class="chip-l">제안 대상</div>
-        <div class="chip-v">APS 그룹</div>
-      </div>
-      <div class="hero-chip">
-        <div class="chip-l">펀드 규모</div>
-        <div class="chip-v">50억 원</div>
-      </div>
-      <div class="hero-chip">
-        <div class="chip-l">목표 IRR</div>
-        <div class="chip-v">20%+</div>
-      </div>
-      <div class="hero-chip">
-        <div class="chip-l">제안 시기</div>
-        <div class="chip-v">2026. 04</div>
-      </div>
-    </div>
   </div>
   <div class="scroll-hint">SCROLL</div>
 </section>
@@ -719,30 +587,6 @@ footer {
   <p class="sec-desc">APS 그룹의 기술 경쟁력과 스타트업 딥테크를 결합해 신규 매출 창출 및 기업가치 재평가를 동시에 달성합니다.</p>
 
   <div style="height:36px"></div>
-
-  <!-- Stat blocks -->
-  <div class="g4" style="margin-bottom:20px">
-    <div class="stat-block">
-      <div class="stat-label">연결 매출 (2025)</div>
-      <div class="stat-val">4,600<span class="unit">억</span></div>
-      <div class="stat-sub">21개 계열사<br>수직 통합 생태계</div>
-    </div>
-    <div class="stat-block">
-      <div class="stat-label">현재 PER</div>
-      <div class="stat-val" style="color:var(--danger)">5.6<span class="unit">배</span></div>
-      <div class="stat-sub">업계 평균 8~12배 대비<br>30~50% 저평가</div>
-    </div>
-    <div class="stat-block">
-      <div class="stat-label">펀드 규모</div>
-      <div class="stat-val" style="color:var(--g-green)">50<span class="unit">억</span></div>
-      <div class="stat-sub">5년 만기 · 3년 투자기간<br>5~10개사 투자</div>
-    </div>
-    <div class="stat-block">
-      <div class="stat-label">목표 PER (재평가)</div>
-      <div class="stat-val" style="color:var(--g-green)">8~10<span class="unit">배</span></div>
-      <div class="stat-sub">IRR 20% 이상<br>3년 내 달성 목표</div>
-    </div>
-  </div>
 
   <div class="g-12">
     <div class="card">
@@ -777,12 +621,31 @@ footer {
 
 <!-- ── SECTION 2: 현황 진단 ─────────── -->
 <section id="problem" class="section">
-  <div class="sec-tag">02 현황 진단</div>
+  <div class="sec-tag">02 APS 그룹 현황 진단 및 당면 과제</div>
   <h2 class="sec-title">시장 저평가 원인 분석</h2>
   <p class="sec-desc">탄탄한 실적에도 불구하고 미래 성장 스토리 부족으로 저평가가 지속됩니다.</p>
 
   <div style="height:36px"></div>
 
+  <!-- 2.1 그룹 강점 -->
+  <div class="card" style="margin-bottom:20px">
+    <div class="card-title">2.1 그룹의 강점 및 인프라</div>
+    <div class="g2">
+      <ul class="info-list">
+        <li><span class="info-key">수직 통합</span><span class="info-val">OLED 82% · 반도체 15.6% · 2차전지 1.5% (AP시스템즈 기준)</span></li>
+        <li><span class="info-key">Total Solution</span><span class="info-val">장비-부품(제니스월드)-S/W(코닉)-검사(넥스틴·디이엔티) 21개 계열사</span></li>
+        <li><span class="info-key">안정적 실적</span><span class="info-val accent">2025년 연결 매출 4,600억 원 · 당기순이익 30% 주주환원</span></li>
+      </ul>
+      <ul class="info-list">
+        <li><span class="info-key">기술 시너지</span><span class="info-val">레이저·광학·제어 기술 내재화 → 삼성디스플레이·BOE·LG에너지솔루션 공급</span></li>
+        <li><span class="info-key">미래사업</span><span class="info-val">AI·로봇·의료·신소재(비트 2대주주)·방산(SR 편입) 다각화</span></li>
+        <li><span class="info-key">성장 목표</span><span class="info-val accent">Triple 3 — 2030년 매출 3조 · 영업이익 3천억 · 시총 3조</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 2.2 당면 과제 -->
+  <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px">2.2 당면 과제 (시장 저평가 원인)</div>
   <div class="problem-row" style="margin-bottom:20px">
     <div class="problem-col">
       <div class="prob-head bad">⚠ 현재 상황 (문제)</div>
@@ -847,6 +710,10 @@ footer {
       </div>
     </div>
   </div>
+
+  <div class="hl-box" style="margin-top:20px">
+    <p><strong>해결 방향</strong>: 대기업 선진 사례(삼성 C-Lab Outside, 에코프로 OI)처럼 <strong>스타트업과의 전략적 협업·투자</strong>를 통해 '혁신 성장 플랫폼 기업'으로 재포지셔닝해야 합니다.</p>
+  </div>
 </section>
 
 <div class="divider"></div>
@@ -854,7 +721,7 @@ footer {
 <!-- ── SECTION 3: 핵심 제안 ─────────── -->
 <section id="proposal" class="section">
   <div class="sec-tag">03 핵심 제안</div>
-  <h2 class="sec-title">APS Gravity OI 펀드 및 프로그램</h2>
+  <h2 class="sec-title">APS Gravity 오픈이노베이션 펀드 및 프로그램</h2>
   <p class="sec-desc">50억 원 규모 펀드 조성과 연 2회 오픈이노베이션 프로그램을 통해 딥테크 스타트업과 전략적 협업을 구축합니다.</p>
 
   <div style="height:36px"></div>
@@ -865,7 +732,7 @@ footer {
       <div>
         <div style="font-family:var(--font-mono);font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--g-green);margin-bottom:12px">APS Gravity Open Innovation Fund</div>
         <div class="fund-amount">50억<span>원</span></div>
-        <div class="fund-sub">5년 만기 · 3년 투자기간 · 5~10개사 투자 (1사당 3~10억 원)</div>
+        <div class="fund-sub">5년 만기 · 3년 투자기간 · 5~10개사 투자 (1사당 3~10억 원)<br>Exit: 3~5년 내 IPO·M&A</div>
       </div>
       <div style="display:flex;flex-direction:column;gap:8px;min-width:200px">
         <div style="font-size:12px;color:var(--muted);margin-bottom:4px">핵심 투자 분야</div>
@@ -879,116 +746,37 @@ footer {
   </div>
 
   <!-- Fund Options -->
-  <div class="g3" style="margin-bottom:40px">
-    <div class="option-card">
-      <div class="option-num">Option 1</div>
-      <div class="option-title">AP시스템즈 전용 펀드</div>
-      <div style="font-size:13px;color:var(--muted);margin-bottom:16px">AP시스템즈 단독 100% 출자로 운영하는 전용 CVC 펀드입니다.</div>
-      <div class="option-bar">
-        <span style="min-width:80px;color:var(--muted)">AP시스템즈</span>
-        <div style="flex:1;background:var(--faint);border-radius:99px;height:5px;overflow:hidden">
-          <div class="option-bar-fill" style="width:100%;background:var(--a-blue)"></div>
-        </div>
-        <span style="font-family:var(--font-mono);font-size:11px;color:var(--a-blue)">100%</span>
-      </div>
-    </div>
-    <div class="option-card featured">
-      <div class="option-badge">권장안</div>
-      <div class="option-num">Option 2</div>
-      <div class="option-title">AP시스템즈 + 그래비티벤처스</div>
-      <div style="font-size:13px;color:var(--muted);margin-bottom:16px">균형 잡힌 구조로 존속기간 관리보수 선취 방식을 적용합니다.</div>
-      <div class="option-bar">
-        <span style="min-width:80px;color:var(--muted)">AP시스템즈</span>
-        <div style="flex:1;background:var(--faint);border-radius:99px;height:5px;overflow:hidden">
-          <div class="option-bar-fill" style="width:80%;background:var(--a-blue)"></div>
-        </div>
-        <span style="font-family:var(--font-mono);font-size:11px;color:var(--a-blue)">80%</span>
-      </div>
-      <div class="option-bar">
-        <span style="min-width:80px;color:var(--muted)">그래비티</span>
-        <div style="flex:1;background:var(--faint);border-radius:99px;height:5px;overflow:hidden">
-          <div class="option-bar-fill" style="width:20%;background:var(--g-green)"></div>
-        </div>
-        <span style="font-family:var(--font-mono);font-size:11px;color:var(--g-green)">20%</span>
-      </div>
-    </div>
-    <div class="option-card">
-      <div class="option-num">Option 3</div>
-      <div class="option-title">멀티 LP 구조</div>
-      <div style="font-size:13px;color:var(--muted);margin-bottom:16px">외부 기관 LP를 포함한 다자 출자 구조로 레버리지를 극대화합니다.</div>
-      <div class="option-bar">
-        <span style="min-width:80px;color:var(--muted)">AP시스템즈</span>
-        <div style="flex:1;background:var(--faint);border-radius:99px;height:5px;overflow:hidden">
-          <div class="option-bar-fill" style="width:60%;background:var(--a-blue)"></div>
-        </div>
-        <span style="font-family:var(--font-mono);font-size:11px;color:var(--a-blue)">60%</span>
-      </div>
-      <div class="option-bar">
-        <span style="min-width:80px;color:var(--muted)">기관 LP</span>
-        <div style="flex:1;background:var(--faint);border-radius:99px;height:5px;overflow:hidden">
-          <div class="option-bar-fill" style="width:30%;background:var(--warn)"></div>
-        </div>
-        <span style="font-family:var(--font-mono);font-size:11px;color:var(--warn)">30%</span>
-      </div>
-      <div class="option-bar">
-        <span style="min-width:80px;color:var(--muted)">그래비티</span>
-        <div style="flex:1;background:var(--faint);border-radius:99px;height:5px;overflow:hidden">
-          <div class="option-bar-fill" style="width:10%;background:var(--g-green)"></div>
-        </div>
-        <span style="font-family:var(--font-mono);font-size:11px;color:var(--g-green)">10%</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Special Terms -->
   <div class="card" style="margin-bottom:20px">
-    <div class="card-title">투자자 보호 조건</div>
-    <div class="g3">
-      <div style="padding:16px 0;border-bottom:1px solid var(--border)">
-        <div style="font-family:var(--font-mono);font-size:10px;color:var(--g-green);margin-bottom:6px;letter-spacing:0.08em;text-transform:uppercase">결정권한</div>
-        <div style="font-size:14px;color:var(--text)">최종투자결의 전 AP시스템즈의 결정권한 제공</div>
-      </div>
-      <div style="padding:16px 0;border-bottom:1px solid var(--border)">
-        <div style="font-family:var(--font-mono);font-size:10px;color:var(--g-green);margin-bottom:6px;letter-spacing:0.08em;text-transform:uppercase">우선매수권</div>
-        <div style="font-size:14px;color:var(--text)">조합지분에 대한 AP시스템즈 우선매수권 (필요시)</div>
-      </div>
-      <div style="padding:16px 0;border-bottom:1px solid var(--border)">
-        <div style="font-family:var(--font-mono);font-size:10px;color:var(--g-green);margin-bottom:6px;letter-spacing:0.08em;text-transform:uppercase">Exit 전략</div>
-        <div style="font-size:14px;color:var(--text)">3~5년 내 IPO·M&A를 통한 회수</div>
-      </div>
-    </div>
+    <div class="card-title">출자 구조 (3가지 안)</div>
+    <ul class="info-list">
+      <li><span class="info-key">1안</span><span class="info-val">AP시스템즈 전용펀드 (100% 단독 출자)</span></li>
+      <li><span class="info-key">2안 <span class="badge badge-g" style="font-size:9px;padding:1px 6px">권장</span></span><span class="info-val accent">AP시스템즈 80% + 그래비티벤처스 20% (존속기간 관리보수 선취)</span></li>
+      <li><span class="info-key">3안</span><span class="info-val">AP시스템즈 60% + 기관 LP 30% + 그래비티벤처스 10%</span></li>
+    </ul>
   </div>
 
   <!-- OI Program Flow -->
   <div style="margin-bottom:12px">
-    <div class="sec-tag" style="margin-bottom:16px">APS Gravity Open Innovation Program</div>
+    <div class="sec-tag" style="margin-bottom:8px">APS Gravity Open Innovation Program</div>
+    <div style="font-size:13px;color:var(--muted);margin-bottom:16px">연 2회 운영 · <strong style="color:var(--text)">1기 운영 기간: 2026년 5월~10월</strong> · 8~12개사 선발 목표</div>
     <div class="flow-steps">
       <div class="flow-step">
         <div class="flow-step-num">1</div>
         <div class="flow-step-tag">Phase 01 · 2개월</div>
         <div class="flow-step-title">모집 · 선발</div>
         <div class="flow-step-desc">공모를 통해 APS 기술 시너지 가능 스타트업을 모집합니다. 1기 목표: 8~12개사 선발.</div>
-        <div class="flow-step-detail">
-          서류 심사 → 기술 발표 → 최종 선발<br>1기 운영: 2026년 5월 시작
-        </div>
       </div>
       <div class="flow-step active">
         <div class="flow-step-num">2</div>
         <div class="flow-step-tag">Phase 02 · 3~6개월</div>
         <div class="flow-step-title">PoC 및 협업</div>
         <div class="flow-step-desc">APS 실증 환경에서 기술 검증을 진행합니다. 최대 3,000만 원 지원금 제공.</div>
-        <div class="flow-step-detail">
-          지원금 최대 3,000만 원<br>APS 실증 환경 무상 제공<br>전담 멘토링 제공
-        </div>
       </div>
       <div class="flow-step">
         <div class="flow-step-num">3</div>
         <div class="flow-step-tag">Phase 03 · 이후</div>
         <div class="flow-step-title">Demo Day & Scaling</div>
         <div class="flow-step-desc">PoC 결과를 발표하고 상용화 계약 및 투자 연계로 이어집니다.</div>
-        <div class="flow-step-detail">
-          1기 Demo Day: 2026년 10월<br>상용화 계약 우선 협상<br>펀드 투자 연계
-        </div>
       </div>
     </div>
   </div>
@@ -999,7 +787,7 @@ footer {
 <!-- ── SECTION 4: 협업 테마 ─────────── -->
 <section id="themes" class="section">
   <div class="sec-tag">04 협업 테마</div>
-  <h2 class="sec-title">6대 핵심 협업 테마</h2>
+  <h2 class="sec-title">미래 성장을 위한 6대 핵심 협업 테마</h2>
   <p class="sec-desc">APS 기존 강점(기술 시너지 70% 이상)과 2026~2030 시장 성장성을 반영하여 도출한 6대 테마입니다.</p>
 
   <div style="height:36px"></div>
@@ -1007,23 +795,14 @@ footer {
   <div class="g2" style="margin-bottom:16px">
 
     <!-- Theme 1 -->
-    <div class="theme-card">
+    <div class="theme-card priority">
       <div class="theme-top">
+        <div class="priority-badge">★ 1기 우선</div>
         <div class="theme-num">THEME 01</div>
         <div class="theme-title">AI 기반 스마트 제조 및 공정 지능화</div>
         <div class="theme-desc">수율 최적화, 디지털 트윈, Edge AI 제어를 통해 제조 공정을 혁신합니다.</div>
+        <div style="margin-top:12px;font-size:12px;color:var(--muted)">서브테마: 수율 최적화 · 디지털 트윈 · Edge AI 제어</div>
       </div>
-      <div class="theme-bottom">
-        <div class="theme-row">
-          <span class="theme-row-label">시너지</span>
-          <span>코닉오토메이션 S/W + AP시스템즈·넥스틴·디이엔티 데이터 연동</span>
-        </div>
-        <div class="theme-row">
-          <span class="theme-row-label">함의</span>
-          <span>Recurring Revenue 모델 전환으로 밸류에이션 배수 상향</span>
-        </div>
-      </div>
-      <div class="theme-poc">PoC 예시 → ELA 장비 AI 탑재 시 수율 8~15% 향상 예상</div>
     </div>
 
     <!-- Theme 2 -->
@@ -1032,18 +811,8 @@ footer {
         <div class="theme-num">THEME 02</div>
         <div class="theme-title">첨단 레이저·광학 응용 기술</div>
         <div class="theme-desc">펨토초 레이저 패터닝·디본딩, TGV 드릴링 등 차세대 레이저 응용 기술을 확장합니다.</div>
+        <div style="margin-top:12px;font-size:12px;color:var(--muted)">서브테마: 펨토초 레이저 패터닝·디본딩 · TGV 드릴링</div>
       </div>
-      <div class="theme-bottom">
-        <div class="theme-row">
-          <span class="theme-row-label">시너지</span>
-          <span>AP시스템즈 레이저 + 제니스월드 부품 + 코닉오토메이션 S/W</span>
-        </div>
-        <div class="theme-row">
-          <span class="theme-row-label">함의</span>
-          <span>HBM·Glass Substrate 신시장 선점으로 반도체 매출 확대</span>
-        </div>
-      </div>
-      <div class="theme-poc">PoC 예시 → HBM Debonder 적용 시 처리 속도 20% 향상</div>
     </div>
 
     <!-- Theme 3 -->
@@ -1053,18 +822,8 @@ footer {
         <div class="theme-num">THEME 03</div>
         <div class="theme-title">차세대 2차전지 제조·검사 혁신</div>
         <div class="theme-desc">레이저 노칭·AI 검사, 재활용 기술로 배터리 제조 전 공정을 혁신합니다.</div>
+        <div style="margin-top:12px;font-size:12px;color:var(--muted)">서브테마: 레이저 노칭·AI 검사 · 재활용 기술</div>
       </div>
-      <div class="theme-bottom">
-        <div class="theme-row">
-          <span class="theme-row-label">시너지</span>
-          <span>디이엔티·AP시스템즈·아스텔 End-to-End 솔루션 제공</span>
-        </div>
-        <div class="theme-row">
-          <span class="theme-row-label">함의</span>
-          <span>2차전지 비중 10%↑ + ESG 프리미엄 획득</span>
-        </div>
-      </div>
-      <div class="theme-poc">PoC 예시 → AI 검사 시스템 적용 시 결함 검출률 95% 이상</div>
     </div>
 
     <!-- Theme 4 -->
@@ -1074,18 +833,8 @@ footer {
         <div class="theme-num">THEME 04</div>
         <div class="theme-title">첨단 반도체 패키징·후공정 솔루션</div>
         <div class="theme-desc">HBM·Glass Substrate·SiC 후공정을 위한 차세대 패키징 솔루션을 개발합니다.</div>
+        <div style="margin-top:12px;font-size:12px;color:var(--muted)">서브테마: HBM · Glass Substrate · SiC 후공정</div>
       </div>
-      <div class="theme-bottom">
-        <div class="theme-row">
-          <span class="theme-row-label">시너지</span>
-          <span>AP시스템즈 RTP·Laser + 넥스틴 검사 통합 솔루션</span>
-        </div>
-        <div class="theme-row">
-          <span class="theme-row-label">함의</span>
-          <span>반도체 사업 비중 15% → 30% 확대 목표</span>
-        </div>
-      </div>
-      <div class="theme-poc">PoC 예시 → Laser Debonder 통합으로 20단 수율 10% 향상</div>
     </div>
 
     <!-- Theme 5 -->
@@ -1094,38 +843,18 @@ footer {
         <div class="theme-num">THEME 05</div>
         <div class="theme-title">피지컬 AI·로봇 기반 공장 자동화</div>
         <div class="theme-desc">VLA 협동로봇, 클린룸 AMR을 통해 스마트 팩토리를 완성합니다.</div>
+        <div style="margin-top:12px;font-size:12px;color:var(--muted)">서브테마: VLA 협동로봇 · 클린룸 AMR</div>
       </div>
-      <div class="theme-bottom">
-        <div class="theme-row">
-          <span class="theme-row-label">시너지</span>
-          <span>코닉오토메이션 + 블루타일랩 AI 비전 연동</span>
-        </div>
-        <div class="theme-row">
-          <span class="theme-row-label">함의</span>
-          <span>Total Automation 플랫폼 기업으로 포지셔닝</span>
-        </div>
-      </div>
-      <div class="theme-poc">PoC 예시 → VLA 로봇 적용 시 인력 30% 감소 효과</div>
     </div>
 
-    <!-- Theme placeholder 6 -->
+    <!-- Theme 6 -->
     <div class="theme-card">
       <div class="theme-top">
         <div class="theme-num">THEME 06</div>
         <div class="theme-title">신소재·방산·의료 응용 기술</div>
         <div class="theme-desc">비트(신소재) 2대주주, SR(방산) 계열 편입을 기반으로 AI 의료기기·방산 소재·기능성 신소재 분야로 사업 영역을 확장합니다.</div>
+        <div style="margin-top:12px;font-size:12px;color:var(--muted)">서브테마: AI 의료기기 · 방산 소재 · 기능성 신소재</div>
       </div>
-      <div class="theme-bottom">
-        <div class="theme-row">
-          <span class="theme-row-label">시너지</span>
-          <span>비트(신소재 R&D) + SR(방산 공급망) + APS 레이저·열처리 기술 연계</span>
-        </div>
-        <div class="theme-row">
-          <span class="theme-row-label">함의</span>
-          <span>사업 다각화로 사이클 리스크 분산, 방산·의료 밸류에이션 프리미엄 확보</span>
-        </div>
-      </div>
-      <div class="theme-poc">PoC 예시 → 레이저 기반 신소재 가공 적용으로 부품 단가 15% 절감 목표</div>
     </div>
   </div>
 
@@ -1145,48 +874,28 @@ footer {
   <div style="height:36px"></div>
 
   <div class="g2" style="margin-bottom:20px">
-    <div>
-      <div style="font-family:var(--font-mono);font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--a-blue);margin-bottom:16px">글로벌 트렌드</div>
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="policy-card">
-          <div class="policy-title">Scaling-First & Venture Clienting</div>
-          <div class="policy-desc">2026년 OI는 PoC → 실제 채택(채택률 50% 이상) 중심으로 전환. 투자보다 즉시 도입 우선 (Mind the Bridge Outlook 2026).</div>
-        </div>
-        <div class="policy-card">
-          <div class="policy-title">AI-Driven OI</div>
-          <div class="policy-desc">Physical AI·Edge AI가 OI의 핵심 동력으로 부상 (Gartner). APS 테마 1·5와 직접 연결.</div>
-        </div>
-        <div class="policy-card">
-          <div class="policy-title">ESG·지속가능 협업</div>
-          <div class="policy-desc">반도체·배터리 공급망 탄소중립 솔루션 수요 폭증. ESG 프리미엄이 밸류에이션에 직접 반영.</div>
-        </div>
-      </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--a-blue)">글로벌 트렌드</div>
+      <ul class="info-list">
+        <li><span class="info-key">Scaling-First</span><span class="info-val">PoC → 실제 채택(50%↑) 중심 전환 (Mind the Bridge 2026)</span></li>
+        <li><span class="info-key">AI-Driven OI</span><span class="info-val">Physical AI·Edge AI가 OI 핵심 동력 부상 (Gartner)</span></li>
+        <li><span class="info-key">ESG 협업</span><span class="info-val">반도체·배터리 탄소중립 솔루션 수요 폭증</span></li>
+      </ul>
     </div>
-    <div>
-      <div style="font-family:var(--font-mono);font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--g-green);margin-bottom:16px">국내 정책 동향 (중기부)</div>
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <div class="policy-card" style="background:rgba(0,168,118,0.05);border-color:rgba(0,168,118,0.18)">
-          <div class="policy-title" style="color:var(--g-green)">2026 민관협력 OI 지원사업</div>
-          <div class="policy-desc">전략과제 해결형 중심, AI 과제 비중 60% 이상. PoC 지원금 최대 1.4억 원/사.</div>
-          <div class="policy-highlight">APS 1기 테마와 정책 과제 일치율 90% 이상</div>
-        </div>
-        <div class="policy-card" style="background:rgba(0,168,118,0.05);border-color:rgba(0,168,118,0.18)">
-          <div class="policy-title" style="color:var(--g-green)">TIPS 지원금 13년 만에 대폭 상향</div>
-          <div class="policy-desc">지원금 최대 8억 원으로 대폭 증가. 투자 스타트업의 성장 재원 강화.</div>
-        </div>
-        <div class="policy-card" style="background:rgba(0,168,118,0.05);border-color:rgba(0,168,118,0.18)">
-          <div class="policy-title" style="color:var(--g-green)">민간 선별추천형 트랙</div>
-          <div class="policy-desc">그래비티벤처스 프로그램 등록 시 정부 매칭 자금(2~3배 레버리지) 활용 가능.</div>
-          <div class="policy-highlight">→ PoC 비용 50% 이상 정부 지원 가능</div>
-        </div>
-      </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--g-green)">국내 정책 동향 (중기부)</div>
+      <ul class="info-list">
+        <li><span class="info-key">민관협력 OI</span><span class="info-val accent">PoC 지원금 최대 1.4억 원/사 · AI 과제 비중 60%</span></li>
+        <li><span class="info-key">TIPS 상향</span><span class="info-val">13년 만에 최대 8억 원으로 대폭 증가</span></li>
+        <li><span class="info-key">선별추천형</span><span class="info-val accent">정부 매칭 자금 2~3배 레버리지 활용 가능</span></li>
+      </ul>
     </div>
   </div>
 
   <div style="background:linear-gradient(135deg,rgba(0,168,118,0.07),rgba(26,95,212,0.05));border:1px solid rgba(0,168,118,0.18);border-radius:var(--r-lg);padding:28px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
     <div style="font-size:40px">💡</div>
     <div>
-      <div style="font-family:var(--font-head);font-size:18px;font-weight:700;color:#fff;margin-bottom:6px">APS의 정책 기회</div>
+      <div style="font-family:var(--font-head);font-size:18px;font-weight:700;color:var(--text);margin-bottom:6px">APS의 정책 기회</div>
       <div style="font-size:14px;color:var(--muted);line-height:1.7">1기 테마(AI·2차전지·반도체)가 정부 전략과제와 <strong style="color:var(--g-green)">90% 이상 일치</strong>합니다.<br>APS가 수요기업으로 참여 시 <strong style="color:var(--g-green)">PoC 비용의 50% 이상을 정부가 지원</strong>합니다.</div>
     </div>
   </div>
@@ -1225,13 +934,14 @@ footer {
         <tr>
           <td><span class="badge badge-gray">문화·인재</span></td>
           <td>내부 혁신 문화 조성 및 우수 인재 유입<br><span style="font-size:12px;color:var(--muted)">스타트업 협업 경험 내재화</span></td>
-          <td class="val">협업 사례 10건+</td>
+          <td class="val">협업 사례 10건 이상</td>
         </tr>
         <tr>
           <td><span class="badge badge-w">사회적</span></td>
-          <td>비수도권 딥테크 생태계 활성화<br><span style="font-size:12px;color:var(--muted)">그래비티 네트워크 활용 · ESG 프리미엄</span></td>
-          <td class="val">딥테크 스타트업 협업 10건+<br>ESG 프리미엄 반영</td>
+          <td>비수도권 딥테크 생태계 활성화<br><span style="font-size:12px;color:var(--muted)">그래비티 네트워크 활용</span></td>
+          <td class="val">딥테크 생태계 기여</td>
         </tr>
+
       </tbody>
     </table>
   </div>
@@ -1259,8 +969,8 @@ footer {
 
 <!-- ── SECTION 7: TIMELINE ─────────── -->
 <section id="timeline" class="section">
-  <div class="sec-tag">07 추진 일정</div>
-  <h2 class="sec-title">실행 로드맵</h2>
+  <div class="sec-tag">07 파트너 역량 및 추진 일정</div>
+  <h2 class="sec-title">추진 일정 (안)</h2>
   <p class="sec-desc">MOU 체결부터 2기 런칭까지 12개월 액션 플랜입니다.</p>
 
   <div style="height:36px"></div>
@@ -1268,29 +978,24 @@ footer {
   <div class="g2">
     <div class="timeline">
       <div class="tl-item">
-        <div class="tl-month">Month 01</div>
+        <div class="tl-month">1개월 차</div>
         <div class="tl-title">MOU 체결 + 펀드 결성 준비</div>
         <div class="tl-desc">그래비티벤처스-APS 그룹 간 업무협약 체결. 펀드 구조 확정 및 LP 모집 준비 착수.</div>
       </div>
       <div class="tl-item">
-        <div class="tl-month">Month 02</div>
+        <div class="tl-month">2개월 차</div>
         <div class="tl-title">펀드 조성 완료 + 1기 공모 시작</div>
         <div class="tl-desc">50억 원 펀드 결성 완료. APS Gravity 1기 프로그램 공모 시작 (8~12개사 모집 목표).</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-month">Month 03~04</div>
-        <div class="tl-title">1기 선발 및 PoC 착수</div>
-        <div class="tl-desc">최종 선발 스타트업 확정. APS 실증 환경 배정 및 PoC 프로젝트 킥오프.</div>
       </div>
     </div>
     <div class="timeline">
       <div class="tl-item">
-        <div class="tl-month">Month 06</div>
+        <div class="tl-month">6개월 차</div>
         <div class="tl-title">1기 PoC 완료 + Demo Day</div>
         <div class="tl-desc">PoC 결과 발표회(Demo Day) 개최. 상용화 계약 우선 협상 진행 및 투자 연계 검토.</div>
       </div>
       <div class="tl-item">
-        <div class="tl-month">Month 12</div>
+        <div class="tl-month">12개월 차</div>
         <div class="tl-title">1차 투자 집행 + 2기 런칭</div>
         <div class="tl-desc">PoC 성과 확인 스타트업 대상 펀드 1차 투자 집행. 2기 공모 동시 런칭.</div>
       </div>
@@ -1307,38 +1012,6 @@ footer {
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- ── PARTNER ─────────────────────────── -->
-<section class="section">
-  <div class="sec-tag">제안 주체</div>
-  <h2 class="sec-title">그래비티벤처스</h2>
-
-  <div style="height:24px"></div>
-
-  <div class="g2">
-    <div class="partner-card">
-      <div class="partner-logo" style="color:var(--g-green)">GRAVITY<span style="color:var(--muted)"> VENTURES</span></div>
-      <div class="partner-desc">그래비티벤처스는 딥테크 스타트업 발굴·투자·육성에 특화된 벤처캐피탈입니다. 대기업-스타트업 간 오픈이노베이션 프로그램 설계 및 운영에 풍부한 경험을 보유하고 있습니다.</div>
-      <ul class="cred-list">
-        <li class="cred-item">민간 선별추천형 OI 프로그램 운영 역량</li>
-        <li class="cred-item">딥테크(AI·반도체·배터리) 스타트업 네트워크</li>
-        <li class="cred-item">중기부 매칭 지원금 레버리지 활용 경험</li>
-        <li class="cred-item">비수도권 딥테크 생태계 네트워크 보유</li>
-      </ul>
-    </div>
-    <div class="partner-card">
-      <div class="partner-logo" style="color:var(--a-blue)">APS <span style="color:var(--muted)">GROUP</span></div>
-      <div class="partner-desc">APS 그룹은 반도체·OLED·2차전지 장비의 수직계열화 생태계를 구축한 첨단 제조 기업입니다. 21개 계열사를 통해 Total Solution을 제공합니다.</div>
-      <ul class="cred-list">
-        <li class="cred-item">레이저·광학·제어 기술 내재화 (AP시스템즈)</li>
-        <li class="cred-item">AI·S/W 역량 보유 (코닉오토메이션)</li>
-        <li class="cred-item">검사 기술 전문성 (넥스틴·디이엔티)</li>
-        <li class="cred-item">삼성디스플레이·BOE·LG에너지솔루션 글로벌 고객</li>
-      </ul>
-    </div>
-  </div>
-</section>
 
 <!-- FOOTER -->
 <footer>
@@ -1398,20 +1071,6 @@ window.addEventListener('scroll', () => {
   navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + cur));
 }, { passive: true });
 
-// Progress bar animation
-const bars = document.querySelectorAll('.option-bar-fill');
-const barObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const el = e.target;
-      const w = el.style.width;
-      el.style.width = '0';
-      setTimeout(() => { el.style.width = w; }, 100);
-      barObserver.unobserve(el);
-    }
-  });
-}, { threshold: 0.5 });
-bars.forEach(b => barObserver.observe(b));
 </script>
 </body>
 </html>
